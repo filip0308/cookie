@@ -4,7 +4,7 @@
 <script type="text/javascript" src="js/swfobject-2.2.min.js"></script>
 <script type="text/javascript" src="http://www.java.com/js/dtjava.js"></script>
 <script type="text/javascript" src="js/evercookie.js"></script>
-<title>evercookie - virtually irrevocable persistent cookies</title>
+<title>evercookie</title>
 </head>
 <body>
 
@@ -22,7 +22,7 @@
 
 
 </PRE>
-<H2>EXAMPLE</H2><PRE>
+<H2>ТЕСТ</H2><PRE>
 <script>
 var val = '' + Math.floor(Math.random()*1000);
 var ec = new evercookie({
@@ -45,18 +45,18 @@ function getC(dont)
 	}, dont);
 }
 </script>
-    <b>Cookie found:</b> <i>uid</i> = <span id='idtag'>currently not set</span>
+    <b>Колаче:</b> <i>борј</i> = <span id='idtag'>currently not set</span>
 
-    Click to create an evercookie. Don't worry, the cookie is a
-    random number between 1 and 1000, not enough for me to track
-    you, just enough to test evercookies.
-    <input type=button value="Click to create an evercookie" onClick="document.getElementById('idtag').innerHTML = '*creating*'; document.getElementById('cookies').innerHTML = ''; ec.set('uid', val); setTimeout(getC, 1000, 1); ">
+    Кикни за да креиеаш колаче.
+    На колачето му се дава автоматски број од 1 до 1000.
+        <input type=button value="Кикни за да креиеаш колаче" onClick="document.getElementById('idtag').innerHTML = '*creating*'; document.getElementById('cookies').innerHTML = ''; ec.set('uid', val); setTimeout(getC, 1000, 1); ">
 
     <div id='cookies'></div>
-    Now, try deleting this "uid" cookie anywhere possible, then
-    <input type=button value="Click to rediscover cookies" onClick="document.getElementById('idtag').innerHTML = '*checking*'; document.getElementById('cookies').innerHTML = ''; setTimeout(getC, 300);">
-      or 
-    <input type=button value="Click to rediscover cookies WITHOUT reactivating deleted cookies" onClick="document.getElementById('idtag').innerHTML = '*checking*'; document.getElementById('cookies').innerHTML = ''; setTimeout(getC, 300, 1);">
+    
+    Сега, пробајте да го избришете овој "број" 
+    <input type=button value="Кликнете за повторно да креирате колаче" onClick="document.getElementById('idtag').innerHTML = '*checking*'; document.getElementById('cookies').innerHTML = ''; setTimeout(getC, 300);">
+      или 
+    <input type=button value="Кликни за да креираш колачиња без да ги активирате избришаните колачиња" onClick="document.getElementById('idtag').innerHTML = '*checking*'; document.getElementById('cookies').innerHTML = ''; setTimeout(getC, 300, 1);">
 
 </PRE>
 
