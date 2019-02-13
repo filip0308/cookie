@@ -41,14 +41,14 @@ function getC(dont)
 
     Кикни за да креиеаш избришано колаче.
     На колачето му се дава автоматски број од 1 до 1000.
-        <input type=button value="Кикни за да креиеаш избришано колаче" onClick="document.getElementById('idtag').innerHTML = '*creating*'; document.getElementById('cookies').innerHTML = ''; ec.set('uid', val); setTimeout(getC, 1000, 1); ">
+        <input type=button value="Кикни за да креиеаш избришано колаче" onClick="document.getElementById('idtag').innerHTML = '*се креира*'; document.getElementById('cookies').innerHTML = ''; ec.set('uid', val); setTimeout(getC, 1000, 1); ">
 
     <div id='cookies'></div>
     
     Сега, пробајте да го избришете овој "број" 
-    <input type=button value="Кликнете за повторно да креирате колаче" onClick="document.getElementById('idtag').innerHTML = '*checking*'; document.getElementById('cookies').innerHTML = ''; setTimeout(getC, 300);">
+    <input type=button value="Кликнете за повторно да креирате колаче" onClick="document.getElementById('idtag').innerHTML = '*се креира*'; document.getElementById('cookies').innerHTML = ''; setTimeout(getC, 300);">
       или 
-    <input type=button value="Кликни за да креираш колачиња без да ги активирате избришаните колачиња" onClick="document.getElementById('idtag').innerHTML = '*checking*'; document.getElementById('cookies').innerHTML = ''; setTimeout(getC, 300, 1);">
+    <input type=button value="Кликни за да креираш колачиња без да ги активирате избришаните колачиња" onClick="document.getElementById('idtag').innerHTML = '*се креира*'; document.getElementById('cookies').innerHTML = ''; setTimeout(getC, 300, 1);">
 
 
 </div></div>
